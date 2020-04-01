@@ -6,3 +6,28 @@
 @import "neat";
 
 @import "base/base";
+
+html {
+  padding: 2rem;
+}
+
+.entries-list {
+  .entry {
+    height: 3rem;
+    position: relative;
+    margin-bottom: 0.2rem;
+
+    .entry-label {
+      line-height: 3rem;
+      padding: 0 1rem;
+    }
+    .entry-chart-bar {
+      background-color: lightblue;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      height: 3rem;
+      z-index: -1;
+    }
+  }
+}

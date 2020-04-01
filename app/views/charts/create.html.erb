@@ -1,0 +1,12 @@
+<h1>Chart</h1>
+
+<ul data-controller="chart" class="entries-list">
+  <% @chart.entries.each do |entry| %>
+    <li class="entry">
+      <div class="entry-chart-bar" style="width: <%= entry.display_width %>%"></div>
+      <div class="entry-label">
+        (<%= entry.play_count %>) <%= entry.artist_name %> &mdash; <%= entry.track_name %>
+      </div>
+    </li>
+  <% end %>
+</ul>

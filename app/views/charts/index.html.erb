@@ -1,0 +1,22 @@
+<h1>Last.fm Charts</h1>
+<hr/>
+
+<%= form_for(:chart) do |f| %>
+  <div>
+    <%= f.label(:from_date, 'From') %>
+    <%= f.date_field :from_date %>
+    <%= f.time_field :from_time %>
+  </div>
+  <div>
+    <%= f.label(:to_date, 'To') %>
+    <%= f.date_field :to_date %>
+    <%= f.time_field :to_time %>
+  </div>
+  <div>
+    <%= f.label(:user) %>
+    <%= f.text_field :user %>
+  </div>
+  <p>
+    <%= f.submit('Get the chart!') %>
+  </p>
+<% end %>
